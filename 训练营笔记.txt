@@ -357,5 +357,5 @@ git remote rm origin
 	2. 对比两个分支的区别 git log -p 分支1，分支2
 	3. 合并分支，并手动处理，并上传  
 	git push -u origin master
-		总 结....
+		总 结....123
 
