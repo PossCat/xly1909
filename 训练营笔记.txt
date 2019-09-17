@@ -81,7 +81,7 @@ Linux常用命令
 				1) 如果文件已存在，就是打开并编辑
 				2) 如果文件不存在，就是创建并编辑
 	7. rmdir  --  删除文件夹
-		a. 矮穷矬
+		
 	8. rm   --  删除
 		a. 删除文件
 			i. rm      文件名
@@ -216,18 +216,28 @@ sql语句
 		修改记录
 		
 Git笔记
+	什么是Git？：分布式版本控制系统，协同开发
 
 	什么是Git？分布式版本控制系统
 
-	什么是Git？
-                
-分布式版本控制系统
 
+分布式和集中式
 
-	分布式和集中式
+	Git的安装：百度github下载
 
-	Git的安装
+	创建版本库：在文件夹打开 git bash here
 
+	把文件添加到版本库 git init
+
+	时光穿梭：git reset --hard HEAD、HEAD^、HEAD^^、HEAD~100
+
+	撤销修改:git checkout --文件名
+		
+	删除文件：git reset HEAD 文件名
+			
+	Github	
+		
+	把本机的SSH Key添加到github：在本地创建SSH KEY $ SSH-keygen -t rsa -C "邮箱"，找到SSH KEY所在地复制id_rsa.pub文件内容，到官网中添加钥匙，测试是否连接成功=SSH -T git@github.com
 	创建版本库：
 	1. 创建一个空文件作为版本库
 	2. 在git bash 下切换到文件夹目录，然后输入创建文件初始化命令 git init
