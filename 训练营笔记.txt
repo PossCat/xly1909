@@ -18,42 +18,129 @@ http://mirrors.aliyun.com/ubuntu-releases/
 	8.安装过程，遇到[no]或[yes]，都输入y
 	9.遇到[/usr/bin]相似的，就把[]里的内容抄下来
 	10.看到enjoy，就重启，安装成功，reboot	
-	Linux命令格式
-
+ 	Linux命令格式
+        命令   选项   参数
+	-help
+	--help
 	vi文本编辑器
+		     i
+	命令模式  <----->  编辑模式      
+		    esc
 	
-	Linux常用命令
-		1. tree
+	             :
+	命令模式  <----->  末行模式
+		    esc
 
-		2. ls
+	末行模式：
+		wq：保存并退出
+		q!：不保存并退出
+		q： 退出
 
-		3. cd
 
-		4. pwd
-		
-		5. mkdir
-		
-		6. vi
-		
-		7. rmdir
-		
-		8. rm
-		
-		9. cp 
-		
-		10. mv
-		
-		11. 查看文件内容 -- 了解内容
-			a. Cat
-
-			b. More
-
-			c. Less
-			
-			d. Head
-
-			e. tail
-		12. 软硬链接 ln
+Linux常用命令
+	1. tree
+	2. ls
+		a. 功能：查看当前目录下的文件和文件夹
+		b. 语法：
+			i. Ls
+			ii. Ls     路径 
+		c. 参数：
+			i. -a：显示所有文件， 包括隐藏文件
+			ii. -l：显示文件的详细信息
+			iii. drwxrw-r--   1    yy   yy   4096   Apr   11   11:11   aa
+				1) 第一个字符：文件类型
+					a) 普通文件：-
+						i) .txt    压缩包   可执行文件
+					b) 目录：d
+					c) 链接文件：l
+					d) 套接字：s
+					e) 字符设备：c
+					f) 块设备：b
+					g) 管道：p
+				2) rwx   rw-     r--
+					a) rwx：文件所有者的权限
+					b) rw-：文件所属组的权限
+					c) r--：其他人的权限
+					d) 思考：文件夹的rwx的是什么权限？
+				3) 1：硬链接计数
+	3. Cd  --   切换目录
+		a. Cd     目录
+		b. 怎么进入家目录
+			i. Cd    /home/yy
+			ii. Cd
+			iii. Cd   ~
+	4. pwd
+		a. Print   work   directory
+		b. 打印工作路径
+	5. mkdir --  创建文件夹
+		a. 语法：
+			i. mkdir    文件夹的名字
+	6. vi   --  文本编辑器
+		a. 语法：
+			i. vi     文件名
+				1) 如果文件已存在，就是打开并编辑
+				2) 如果文件不存在，就是创建并编辑
+	7. rmdir  --  删除文件夹
+		a. 矮穷矬
+	8. rm   --  删除
+		a. 删除文件
+			i. rm      文件名
+		b. 删除文件夹
+			i. rm     -r     文件夹名
+	9. cp 
+		a. cp     目标文件    路径
+		b. 情况：
+			i. File(存在)    cp    dir(路径)
+				1) 把file复制到dir
+			ii. file1(存在)     cp    file2(不存在)
+				1) 创建文件file2，把file1的内容复制到file2
+			iii. file1(存在)   cp   file2(存在)
+				1) 把file1的内容覆盖到file2
+			iv. Dir1(存在)   cp   dir2(存在)
+				1) 把dir1复制到dir2中
+			v. Dir1(存在)   cp   dir2(不存在)
+				1) 创建dir2，把dir1中的内容复制到dir2
+	10. mv   --   剪切或重命名
+		a. mv     目标文件    路径
+		b. 情况：
+			i. File(存在)     mv    dir(路径)
+				1) 把file剪切到dir
+			ii. file1(存在)   mv    file2(不存在)
+				1) 把file1改名为file2
+			iii. file1(存在)   mv   file2(存在)
+				1) 把file1的内容覆盖到file2，并且file1消失
+			iv. dir1(存在)   mv   dir2(存在)
+				1) 把dir1剪切到dir2
+			v. dir1(存在)   mv   dir2(不存在)
+				1) 把dir1重命名为dir2
+	11. 查看文件内容 -- 了解内容
+		a. Cat
+			i. 语法：cat    文件名
+			ii. 适合看小文件
+		b. More
+			i. 语法：more    文件名
+			向下浏览一行
+				回车键
+			向下浏览一页
+				空格键
+			只能向下，不能向上
+		c. Less
+			i. 语法：less    文件名
+			向下浏览一行
+				回车键
+			向下浏览一页
+				空格键
+			向上浏览一页
+				pageup键
+			退出
+				q
+		d. Head
+		e. tail
+	12. 软硬链接 ln
+		a. 软连接(快捷方式)
+			i. Ln      -s      文件名      软连接名称
+		b. 硬链接
+			i. Ln      文件名      硬链接名
 	
 mysql笔记
 	主流的数据库管理系统
