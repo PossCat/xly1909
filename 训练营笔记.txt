@@ -211,12 +211,30 @@ Linux常用命令
 		auto_increment(自动增长约束)
 	DML数据操作语言
 		添加记录
-		
+		insert  into  表名(字段名)   values(值)
+		eg：
+			insert into emp(ename,job) values("laowang","Java");
 		删除记录
-		
-		查询记录
-		
-		修改记录
+		delete  from  表名  where  条件
+		eg:
+			delete from emp where ename="laowang"
+			删除姓名为小红，并且性别是女生
+			delete from emp where ename="xiaohong" and sex="W"
+			
+			
+	查询记录
+		select  ename  from  表名
+		eg：
+			select  *  from  emp;
+			查询出老王和小红的姓名
+			select  ename  from  emp  where  ename="laowang" or ename="xiaohong"
+			查询出姓名不是老王的人的年龄
+			select age from emp where ename!="laowang"
+
+	修改记录
+		update  表名  set  字段名=修改的值  where  条件
+		eg：
+			update emp set job="C" where ename="laowang";
 		
 Git笔记
 	什么是Git？：分布式版本控制系统，协同开发
