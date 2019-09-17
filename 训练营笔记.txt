@@ -1,5 +1,5 @@
 ﻿Linux笔记
-	安装VMware虚拟机1
+	安装VMware虚拟机
 https://jingyan.baidu.com/article/215817f78879c21edb142379.html
 	一路下一步，安装破解完成
 	下载Ubuntu镜像文件
