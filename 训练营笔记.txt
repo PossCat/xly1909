@@ -6,8 +6,7 @@ https://jingyan.baidu.com/article/215817f78879c21edb142379.html
 http://mirrors.aliyun.com/ubuntu-releases/
 	在VMware虚拟机中安装Ubuntu系统
 	https://jingyan.baidu.com/article/af9f5a2d62d07143150a457c.html
-
-	开机之后，安装VMware tools工具
+                开机之后，安装VMware tools工具
 	1.插入光盘，VM安装目录下，linux.iso
 	2.把弹出的压缩包，复制到桌面
 	3.打开终端
@@ -142,10 +141,10 @@ Linux常用命令
 		b. 硬链接
 			i. Ln      文件名      硬链接名
 	
-mysql笔记
-主流的数据库管理系统
+    mysql笔记
+              主流的数据库管理系统
 	Oracle(甲骨文)、DB2(IBM)、SQLServer(微软)、MySQL
-进入mysql数据库
+            进入mysql数据库
 	下载mysql并安装
 		百度jspstudy，进官网下载安装
 	开启mysql服务
@@ -170,7 +169,7 @@ mysql笔记
 	
 
 
-sql语句
+          sql语句
 	DDL数据定义语言
 		查看数据库
 			show    databases;
