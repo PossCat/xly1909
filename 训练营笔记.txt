@@ -1,12 +1,23 @@
 ﻿Linux笔记
 	安装VMware虚拟机
-
+https://jingyan.baidu.com/article/215817f78879c21edb142379.html
+	一路下一步，安装破解完成
 	下载Ubuntu镜像文件
-
+http://mirrors.aliyun.com/ubuntu-releases/
 	在VMware虚拟机中安装Ubuntu系统
-	
+	https://jingyan.baidu.com/article/af9f5a2d62d07143150a457c.html
+
 	开机之后，安装VMware tools工具
-		
+	1.插入光盘，VM安装目录下，linux.iso
+	2.把弹出的压缩包，复制到桌面
+	3.打开终端
+	4.进入桌面，输入cd  Desktop
+	5.解压缩，输入tar  -zxvf  压缩包名字(tab提示)
+	6.进入到解压好的文件夹，输入cd  文件夹名字
+	7.执行安装程序，输入sudo  ./vm(tab提示)
+	8.安装过程，遇到[no]或[yes]，都输入y
+	9.遇到[/usr/bin]相似的，就把[]里的内容抄下来
+	10.看到enjoy，就重启，安装成功，reboot	
 	Linux命令格式
 
 	vi文本编辑器
