@@ -355,6 +355,7 @@ git remote rm origin
 
 	1. 从远程下载分支 git fetch origin 远程仓库分支名:本地分支名
 	2. 对比两个分支的区别 git log -p 分支1，分支2
-	3. 合并分支，并手动处理，并上传  git push -u origin master
-		你们总结....
+	3. 合并分支，并手动处理，并上传  
+	git push -u origin master
+		总结....
 
